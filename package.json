@@ -1,0 +1,30 @@
+{
+  "name": "papel",
+  "version": "1.0.0",
+  "description": "One stop logging utility.",
+  "main": "lib/index.js",
+  "repository": "mariusc23/papel",
+  "scripts": {
+    "prepublish": "node -e 'require(\"./node_modules/babel-prepublish/lib/\").default().catch(console.log.bind(console))'",
+    "test": "node_modules/mocha/bin/mocha --compilers js:babel-core/register"
+  },
+  "author": {
+    "name": "Marius Craciunoiu",
+    "url": "http://mariusc23.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-prepublish": "^1.0.1",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.18",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "chalk": "^1.1.1",
+    "lodash.memoize": "^3.0.4",
+    "minimatch": "^3.0.0"
+  }
+}
