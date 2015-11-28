@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "repository": "mariusc23/papel",
   "scripts": {
-    "prepublish": "node -e 'require(\"./node_modules/babel-prepublish/lib/\").default().catch(console.log.bind(console))'",
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
     "test": "node_modules/mocha/bin/mocha --compilers js:babel-core/register"
   },
   "author": {
@@ -14,8 +14,8 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.2.0",
     "babel-core": "^6.2.1",
-    "babel-prepublish": "^1.0.1",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-stage-0": "^6.1.18",
     "chai": "^3.4.1",
