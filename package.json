@@ -1,6 +1,6 @@
 {
   "name": "papel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One stop logging utility.",
   "main": "lib/index.js",
   "repository": "mariusc23/papel",
